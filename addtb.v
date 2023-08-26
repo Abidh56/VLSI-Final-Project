@@ -9,8 +9,6 @@ module fa32bit_tb;
 
 	carry_save_adder_pipeline inst(
       		.sum(s),
-		//.cout(cout),
-		//.cin(cin),
 		.reset(reset),
 		.A(a),
       		.B(b),
@@ -18,8 +16,8 @@ module fa32bit_tb;
 	);
 
 initial begin
-  	$dumpfile("dump.vcd");
-  	$dumpvars(1);
+  	// $dumpfile("dump.vcd");
+  	// $dumpvars(1);
   	reset = 0;
 	a = 32'b00000000000000000000000000000000;
 	b = 32'b00000000000000000000000000000000;
